@@ -24,7 +24,7 @@ class MyTextboxWidget extends StatelessWidget {
         labelText: 'Custom Text',
         suffixIcon: IconButton(
           icon: Icon(
-            obscureText ? Icons.visibility : Icons.visibility_off,
+            obscureText ? Icons.closed_caption_sharp : Icons.closed_caption_disabled,
             color: Colors.black,
           ),
           onPressed: eyeOnTap,

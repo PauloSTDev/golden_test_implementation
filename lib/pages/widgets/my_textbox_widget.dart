@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class MyTextboxWidget extends StatelessWidget {
   const MyTextboxWidget({
     super.key,
-    required this.eyeOnTap,
+    this.eyeOnTap,
     this.obscureText = true,
   });
 

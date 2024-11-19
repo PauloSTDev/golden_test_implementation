@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Fontes:
+## Fontes:
 
 https://medium.com/brasilflutter/golden-test-testando-suas-páginas-parte-1-a8b2b490f4ea
 

@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:golden_test_implementation/pages/widgets/my_textbox_widget.dart';
 import 'package:golden_toolkit/golden_toolkit.dart';
 
@@ -27,5 +28,21 @@ void main() {
 
     //assert
     await screenMatchesGolden(tester, 'my_textbox_widget_password_input_test');
+  });
+
+  // Testing with context
+  testGoldens('Testing Theme', (tester) async {
+    await loadAppFonts();
+
+    final builder = GoldenBuilder.grid(
+      columns: 2,
+      widthToHeightRatio: 1,
+    )..addScenarioBuilder("Primary Color", (context) {
+        var color = Theme.of(context).colorScheme.primary;
+        return Container(color: color);
+      });
+
+    await tester.pumpWidgetBuilder(builder.build());
+    await screenMatchesGolden(tester, 'golden_builder_theme');
   });
 }

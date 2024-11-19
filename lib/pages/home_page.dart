@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Golden Test Implementation'),
-        backgroundColor: Colors.brown,
+        backgroundColor: Colors.amberAccent,
         centerTitle: true,
       ),
       body: Column(

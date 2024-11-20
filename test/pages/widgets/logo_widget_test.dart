@@ -36,19 +36,19 @@ void main() {
         children: [
           GoldenTestScenario(
             name: 'with title',
-            child: const ListTile(title: Text('ListTile.titlee')),
+            child: const ListTile(title: Text('ListTile.title')),
           ),
           GoldenTestScenario(
             name: 'with title and subtitle',
             child: const ListTile(
-              title: Text('ListTile.titlee'),
-              subtitle: Text('ListTile.subtitlee'),
+              title: Text('ListTile.title'),
+              subtitle: Text('ListTile.subtitle'),
             ),
           ),
           GoldenTestScenario(
             name: 'with trailing icon',
             child: const ListTile(
-              title: Text('ListTile.titlee'),
+              title: Text('ListTile.title'),
               trailing: Icon(Icons.chevron_right_rounded),
             ),
           ),
@@ -66,7 +66,7 @@ void main() {
             name: 'pressed',
             child: ElevatedButton(
               onPressed: () {},
-              child: const Text('Pressedd'),
+              child: const Text('Pressed'),
             ),
           ),
         ],

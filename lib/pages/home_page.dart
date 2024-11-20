@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:golden_test_implementation/pages/widgets/logo_widget.dart';
 import 'package:golden_test_implementation/pages/widgets/my_textbox_widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -32,6 +33,8 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
+          const SizedBox(height: 20),
+          const LogoWidget(color: LogoColor.flutter)
         ],
       ),
     );

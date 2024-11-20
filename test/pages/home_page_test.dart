@@ -13,6 +13,7 @@ void main() {
         Device.iphone11,
         Device.tabletLandscape,
         Device.tabletPortrait,
+        const Device(size: Size(400, 600), name: 'my_custom_phone', textScale: 2.5)
       ])
       ..addScenario(
         name: 'No Text',

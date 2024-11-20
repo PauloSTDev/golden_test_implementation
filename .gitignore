@@ -19,6 +19,11 @@ migrate_working_dir/
 # Caso necessário no projeto ignore os snapshots de failure do golden test
 # Golden Tests Failures
 test/pages/failures/
+test/pages/widgets/goldens/ci
+test/pages/widgets/goldens/macos
+test/pages/widgets/failures
+# test/pages/widgets/goldens/linux
+# test/pages/widgets/goldens/windows
 
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
